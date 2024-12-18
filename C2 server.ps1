@@ -3,8 +3,7 @@
 $ProgressPreference = "SilentlyContinue"
 $ErrorActionPreference = "SilentlyContinue"
 $OSVersion = [Environment]::OSVersion.Platform
-if ($OSVersion -like "*Win*") {
-$Host.UI.RawUI.WindowTitle = "C2Server - by @JoelGMSec" 
+if ($OSVersion -like "*Win*") { 
 $Host.UI.RawUI.BackgroundColor = "Black"
 $Host.UI.RawUI.ForegroundColor = "White" }
 
