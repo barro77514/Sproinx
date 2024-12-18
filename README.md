@@ -11,7 +11,7 @@ All communication between the two elements is encrypted or encoded so as to be u
 It is recommended to clone the complete repository or download the zip file.
 You can do this by running the following command:
 ```
-git clone https://github.com/barro77514/sproinks
+git clone https://github.com/barro77514/Sproinx
 ```
 
 
