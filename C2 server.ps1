@@ -7,6 +7,17 @@ if ($OSVersion -like "*Win*") {
 $Host.UI.RawUI.BackgroundColor = "Black"
 $Host.UI.RawUI.ForegroundColor = "White" }
 
+# Banner
+function Show-Banner {
+   Write-Host 
+   Write-Host "   ____ ____  ____                            " -ForegroundColor Blue
+   Write-Host "  / ___|___ \/ ___|  ___ _ ____   _____ _ __  " -ForegroundColor Blue
+   Write-Host " | |     __) \___ \ / _ \ '__\ \ / / _ \ '__| " -ForegroundColor Blue
+   Write-Host " | |___ / __/ ___) |  __/ |   \ V /  __/ |    " -ForegroundColor Blue
+   Write-Host "  \____|_____|____/ \___|_|    \_/ \___|_|    " -ForegroundColor Blue
+   Write-Host                                                
+   Write-Host "  -------------- by SproinxTeam -------------  " -ForegroundColor Green }
+
 # Http Server
 $whost = $args[0]
 $wport = $args[1]
