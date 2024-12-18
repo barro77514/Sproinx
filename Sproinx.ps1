@@ -7,6 +7,18 @@ if ($OSVersion -like "*Win*") {
 $Host.UI.RawUI.BackgroundColor = "Black"
 $Host.UI.RawUI.ForegroundColor = "White" }
 
+function Show-Banner {
+   Write-Host 
+   Write-Host "   _________                   .__                " -ForegroundColor Blue
+   Write-Host "  /   _____/____________  ____ |__| ____ ___  ___ " -ForegroundColor Blue
+   Write-Host "  \_____  \\____ \_  __ \/  _ \|  |/    \\  \/  / " -ForegroundColor Blue
+   Write-Host "  /        \  |_> >  | \(  <_> )  |   |  \>    <  " -ForegroundColor Blue
+   Write-Host " /_______  /   __/|__|   \____/|__|___|  /__/\_ \ " -ForegroundColor Blue
+   Write-Host "        \/|__|                        \/      \/" -ForegroundColor Blue
+   Write-Host                                                            
+   Write-Host "  ----------------- by Sproinx Team ----------------  " -ForegroundColor Green }
+
+
 # Help
 function Show-Help {
    Write-host ; Write-Host " Info: " -ForegroundColor Yellow -NoNewLine ; Write-Host " This tool helps you simulate encryption process of a"
